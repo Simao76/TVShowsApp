@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# TV-Show-Browsing-Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+This project is a React-based application for browsing TV shows and their episodes. The app fetches data from an external API and provides a clean, responsive user interface for navigating shows and viewing detailed information.
 
-## Available Scripts
+Technologies Used
+React: For building the user interface.
+Redux: For managing the global state of the application.
+Redux Toolkit: Used for slices and async thunks to handle API calls.
+TypeScript: To ensure type safety and improve code quality.
+Styled-Components: For styling the components with CSS-in-JS.
+React Router: For handling navigation between different pages.
+API: TV show data is fetched from the TVMaze API.
 
-In the project directory, you can run:
+Features
+Home Page: Displays a list of TV shows in a responsive grid layout.
+TV Show Details Page: Provides detailed information about a selected show and lists its episodes in a sidebar.
+Episode Details Page: Displays detailed information about a selected episode.
+Read More: Links on show descriptions to navigate to the details page.
 
-### `npm start`
+Project Structure
+src/pages: Contains the main pages (HomePage, TVShowDetailsPage, EpisodeDetailsPage).
+src/components: Reusable components like TVShowCard.
+src/redux: Contains slices and thunks for managing TV shows and episode data.
+src/types: TypeScript interfaces and types for strong typing across the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Prerequisites
+Node.js
+npm or yarn
 
-### `npm test`
+Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository:
+git clone https://github.com/Simao76/TV-Show-Browsing-Application.git
 
-### `npm run build`
+Navigate to the project directory:
+cd tv-show-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies:
+npm/yarn install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Start the development server:
+npm/yarn start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+To build the project for production:
+npm/yarn run build
